@@ -1,0 +1,4 @@
+#!/bin/sh
+# The Tally compiler and reference interpreter. Run ./build.sh first.
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+exec java -Xss512m -cp "$DIR/build/classes" tally.Main "$@"

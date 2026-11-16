@@ -1,0 +1,4 @@
+#!/bin/sh
+# The TVM virtual machine. Run ./build.sh first.
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+exec java -cp "$DIR/build/classes" tally.vm.TvmMain "$@"
